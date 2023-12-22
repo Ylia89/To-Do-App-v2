@@ -9,17 +9,31 @@ function addItem(event){
     let li = document.createElement("li")
     li.className = 'App' 
     let div = document.createElement('div')
-    div.textContent = input.value
+    div.className = 'icon'
+    let label = document.createElement('label')
+    label.textContent = input.value
+    let img = document.createElement('img')
+    img.src = "./assets/cloze.svg"
+    img.alt = "cloze"
+    img.id = Math.random()+''
+    img.addEventListener("click", remove)
+    div.appendChild(img)
     li.appendChild(div)
+    li.appendChild(label)
     conteiner.appendChild(li) 
 }
 
-document.conteiner(li)
-li.remove()
-div.className = 'icon'
-let label = document.createElement('label')
-li.append(label) 
-label.textContent = input.value
+function remove(event){
+    console.log(event.target)
+}
+
+let arr = []
+
+
+
+
+
+
 
 
 
