@@ -1,0 +1,94 @@
+body {
+    background-color: #3F72AF;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#wrap {
+    margin: auto;
+    display: flex;
+    width: 350px;
+    height: 350px;
+    padding: 45px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.toDoApp {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.DoApp {
+    margin: auto;
+    display: flex;
+    min-height: 30px;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+    width: 220px;
+    height: 32px;
+    flex-shrink: 0;
+    align-items: center;
+    text-align: center;
+    justify-content: last baseline;
+    background: rgb(228, 228, 228);
+    padding: 0.5rem 1rem;
+}
+
+input {
+    background: rgb(228, 228, 228);
+    border: rgb(228, 228, 228); ;
+}
+
+.App {
+    background: rgb(228, 228, 228);
+    display: flex;
+    min-height: 50px;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.rov {
+    display: flex ;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.DoApp .icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    fill: var(--secondary, #AAA);
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+
+.App .icon {
+    margin: 0.5rem;
+}
+
+.App:hover {
+    background: rgb(219, 218, 218);
+}
+
